@@ -5,6 +5,7 @@
 # 2.using modules
 
 # usingi list:
+# //////////////////////////////////////////////////////////////////////////////////////////////////
 
 # example 1:
 # //////////////////////////////////////
@@ -86,4 +87,40 @@
 #         break
 #     else:
 #         print("Enter the correct choice")
+
+
+
+
+
+# Using collections.deque :
+
+# this one is more efficiant for stack operations
+# ///////////////////////////////////////////////////////////////////////////////////////////////////////
+# from collections import deque
+
+# stack = deque()
+# print(stack)
+
+# stack.append(10)
+# stack.append(20)
+# stack.append(30)
+
+# stack.pop()                               # this will now remove the last element of the stack 
+# stack.pop()
+
+# print(stack)
+
+
+# //////////////////////////////////////////////////////////////////////////
+
+# import queue
+
+# stack = queue.LifoQueue(3)   # we can also set the limit of the stack by give a number for limit
+# stack.put(10)
+# stack.put(20)
+# stack.put(30)
+# stack.put(40,timeout=1)         # by using timeout this will show the error of queue limit when the limit is full that will show here
+
+# print(stack)
+
 
